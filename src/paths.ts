@@ -5,11 +5,11 @@ const paths = {
   topicShow(topicSlug: string) {
     return `/topics/${topicSlug}`;
   },
-  postSlug(topicSlug: string) {
+  postCreate(topicSlug: string) {
     return `/topics/${topicSlug}/posts/new`;
   },
-  postsShow(topicSlug: string) {
-    return `/topics/${topicSlug}/posts`;
+  postShow(topicSlug: string, postId: string) {
+    return `/topics/${topicSlug}/posts/${postId}`;
   },
 };
 
